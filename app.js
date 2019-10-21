@@ -7,7 +7,7 @@ const app = express()
 app.get('/city', function (req, res) {
     if (!req.query.search) {
         return res.send({
-            error: "Debes enivar una ciudad correcta"
+            error: "Debes enivar el query search"
         })
     } 
         city.city(req.query.search, function (error, cityData) {
